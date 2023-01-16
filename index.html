@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <!-- Header section  -->
+        <section id="header">
+            <div class="header container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="#home"><img src="./assets/logo.png" width="60px"></a>
+                    </div>
+                    <nav>
+                        <ul id="menuitems">
+                            <li><a href="#home">CONVERTER</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                    <img src="./assets/image/menu.png" class="menu-icon">
+                </div>
+            </div>
+        </section>
+        <!-- End Header section  -->
+        <div class="container">
+            <form>
+                Input: <input type="text" id="inputNum">
+                <br><br>
+                Base:
+                <select id="base">
+                    <option value="2">Binary</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+                <br><br>
+                Output Base:
+                <select id="outputBase">
+                    <option value="2">Binary</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+                <br><br>
+                <button type="button" onclick="convert()">Convert</button>
+            </form> 
+              <br>
+              <p id="output"></p>
+        </div>
+        
+          
+        <script>
+          function convert() 
+          {
+            var inputNum = document.getElementById("inputNum").value;
+            var base = document.getElementById("base").value;
+            var outputBase = document.getElementById("outputBase").value;
+            var outputNum = parseInt(inputNum, base).toString(outputBase);
+            document.getElementById("output").innerHTML = outputNum;
+          }
+        </script>
+          
+    </body>
+</html>
