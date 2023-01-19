@@ -27,32 +27,34 @@
         </section>
         <!-- End Header section  -->
         <div class="container">
-            <form>
-                <div class="input-block">
-                    <label for="base">From</label>
-                    <select id="base">
-                        <option value="2">Binary</option>
-                        <option value="10">Decimal</option>
-                        <option value="16">Hexadecimal</option>
-                    </select>
-                </div>
-                <div class="input-block">
-                    <label for="outputBase">To</label>
-                    <select id="outputBase">
-                        <option value="2">Binary</option>
-                        <option value="10">Decimal</option>
-                        <option value="16">Hexadecimal</option>
-                    </select>
-                </div>
-                <div class="input-block">
-                    <label for="inputNum">Input</label>
-                    <input type="text" id="inputNum">
-                </div>
-                <button type="button" onclick="convert()">Convert</button>
-                <div class="">
-                    <p id="output"></p>
-                </div>
-            </form> 
+            <div class="converter">
+                <form>
+                    <div class="input-block">
+                        <label for="base">From</label>
+                        <select id="base">
+                            <option value="2">Binary</option>
+                            <option value="10">Decimal</option>
+                            <option value="16">Hexadecimal</option>
+                        </select>
+                    </div>
+                    <div class="input-block">
+                        <label for="outputBase">To</label>
+                        <select id="outputBase">
+                            <option value="2">Binary</option>
+                            <option value="10">Decimal</option>
+                            <option value="16">Hexadecimal</option>
+                        </select>
+                    </div>
+                    <div class="input-block">
+                        <label for="inputNum">Input</label>
+                        <input type="text" id="inputNum">
+                    </div>
+                    <button type="button" onclick="convert()">Convert</button>
+                    <div class="">
+                        <p id="output"></p>
+                    </div>
+                </form> 
+            </div>
         </div>
         <div class="footer">
             <p class="copyright">© COPYRIGHTED 2023 IQBAL MUQRI. ALL RIGHT RESERVED</p> 
