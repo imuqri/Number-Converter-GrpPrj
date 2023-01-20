@@ -22,6 +22,7 @@
   }
   
   /* -------- Navbar --------- */
+  
   #header {
     position: fixed;
     z-index: 10;
@@ -61,10 +62,12 @@
   }
   
   .navbar ul li:hover a {
-    color: white;
+    color: rgb(255, 218, 50);
     text-shadow: 0 0 5px black;
   }
-  
+  .navbar nav ul li .active {
+    color:rgb(255, 218, 50) ;
+  }
   .menu-icon {
     width: 28px;
     margin-right: 20px;
