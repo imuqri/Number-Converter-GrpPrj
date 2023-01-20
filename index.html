@@ -26,13 +26,16 @@
             </div>
         </section>
         <!-- End Header section  -->
-        <div class="container">
+        <div class=" about container ">
+            <div class="tittle">
+                <h1>C O N V E R T E R</h1>
+            </div>
             <div class="converter">
                 <form>
                     <div class="input-block">
                         <label for="base">From</label>
                         <select id="base">
-                            <option value="2">Binary</option>
+                            <option value="2" selected="selected" >Binary</option>
                             <option value="10">Decimal</option>
                             <option value="16">Hexadecimal</option>
                         </select>
@@ -41,7 +44,7 @@
                         <label for="outputBase">To</label>
                         <select id="outputBase">
                             <option value="2">Binary</option>
-                            <option value="10">Decimal</option>
+                            <option value="10" selected="selected" >Decimal</option>
                             <option value="16">Hexadecimal</option>
                         </select>
                     </div>
@@ -49,15 +52,15 @@
                         <label for="inputNum">Input</label>
                         <input type="text" id="inputNum">
                     </div>
-                    <button type="button" onclick="convert()">Convert</button>
-                    <div class="">
-                        <p id="output"></p>
+                    <button type="button" class="btn" onclick="convert()">CONVERT</button>
+                    <div class="output">
+                        <h2 id="output" class="h2"></h2>
                     </div>
                 </form> 
             </div>
         </div>
         <div class="footer">
-            <p class="copyright">© COPYRIGHTED 2023 IQBAL MUQRI. ALL RIGHT RESERVED</p> 
+            <p class="copyright">© COPYRIGHTED 2023 ITT588. ALL RIGHT RESERVED</p> 
         </div>
           
         <script>
